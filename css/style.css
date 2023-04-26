@@ -9,13 +9,14 @@
 }
 :root{
     --bg-color: rgba(255, 255, 255, 0.871);
-    --text-color: #6a5656e2;
-    --main-color: #000000;
+    --text-color: #FFFFFF;
+    --main-color: #6af2f6e3;
 }
 body{
     min-height: 100vh;
     background: var(--bg-color);
     color: var(--text-color);
+    background-color: black;
 }
 header{
     position: fixed;
@@ -29,15 +30,49 @@ header{
     background: transparent;
     padding: 28px 12%;
     transition: all .50s ease;
+    background: linear-gradient(to top, #000000, rgba(100, 255, 242, 0.1));
+
 }
-.logo{
+.hero{
+    padding-top: 10%;
     display: flex;
     align-items: center;
+    justify-content:center ;
+}
+.hero h1{
+    padding-left: 80px;
+    font-size: 100px;
+    margin: 0;
+}
+
+.hero img{
+    width: 30%;
+    height:30%;    
+    box-shadow: 0px 0px 50px rgba(100, 255, 242, 0.71);
+    border-radius: 15%;
+
+}
+.contenido{
+    display:flex;
+    justify-content: center;
+    padding-top: 0;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 20%;
+    margin-right: 10%;
+}
+.texto-contenido{
+    font-size: small;
+    font-family: monospace;
+
 }
 .logo i{
     color: var(--main-color);
     font-size: 28px;
     margin-right: 3px;
+}
+.logo i:hover{
+    color: var(--text-color);
 }
 .logo span{
     color: var(--text-color);
@@ -47,6 +82,7 @@ header{
 }
 .navbar{
     display: flex;
+
 }
 .navbar a{
     color: var(--text-color);
@@ -55,6 +91,7 @@ header{
     padding: 5px 0;
     margin:  0px 30px;
     transition: all .50s ease;
+    position: relative;
 }
 .navbar a:hover{
     color: var(--main-color);
@@ -64,12 +101,10 @@ header{
     color: var(--main-color);
 }
 .main a{
-    margin-right: 25px;
-    margin: left 10px;
+    margin:auto;
     color: var(--text-color);
     font-size: 1.1rem;
     font-weight: 500;
-    transition: all .50s ease;
 }
 .user{
     display: flex;
