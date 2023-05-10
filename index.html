@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <title >System Wise</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/tPbQqSY/system-wise.png">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><i class="ri-home-line"></i><span>System Wise</span></a>
+        <ul class="navbar">
+          <li><a href="./index.html" class="active">Inicio</a></li>
+          <li><a href="./contacto.html" class="active">Contacto</li>
+          <li><a href="./servicios.html" class="active">Servicios</a></li>
+        </ul>
+        <div class="main">
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+        <div class="hero">
+            <img src="./img/logo.png" alt="SystemWise" class="imagenlogo">
+            <h1>SystemWise</h1>
+        </div>
+        <div class="contenido">
+            <h1>¿Qué hacemos?</h1>
+            
+            <h2 class="texto-contenido">
+                SystemWise ofrece soluciones integrales de sistemas para empresas. Permite optimizar su rendimiento y eficiencia en áreas relacionadas con tecnología, como seguridad y mantenimiento. Con su interfaz fácil de usar, SystemWise ofrece monitoreo y gestión en tiempo real, además de soluciones de seguridad completa.    
+            </h2> 
+            <div class="boton-consulta" id="mostrar-formulario">
+                <button  class="boton">Consultanos</button>
+            </div>
+        </div>
+        <form action="https://formsubmit.co/alejocolazurda@gmail.com" method="POST" id="formulario" class="oculto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+          
+            <button type="submit" class="boton" onclick="enviarCorreo()">Enviar correo</button>
+
+        </form>
+          
+
+          
+        <div class="mockup">
+        <img class="img-mockup" src="./img/sw-mockup.png">
+        </div>  
+     
+      
+
+    <footer>
+        <div class="footer-container">
+          <div>
+            <img src="./img/logo.png" alt="Logo de la empresa"  class="logo-footer" >
+          </div>
+          <br>
+          <div class="contacto">
+            <h3>Contacto</h3>
+            <br>
+            <p>Dirección: 1234 Calle Principal, Ciudad</p>
+            <p>Teléfono: (123) 456-7890</p>
+            <p>Email: info@miempresa.com</p>
+        </div>
+            
+          <div class="redes-sociales">
+            <h3>Redes Sociales</h3>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      
+      <script type="text/javascript" src="./js/script.js"></script>
+      <script type="text/javascript" src="./js/send-email.js"></script>
+    </body>
+</html>
